@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const API_KEY = "d63d8228e5dc06bc0abc7704ef35e2b2";
+const API_KEY = process.env.REACT_APP_OPENWEATHERMAP_KEY;
 
 const getBackgroundVideo = (main) => {
   switch (main) {
